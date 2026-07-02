@@ -32,7 +32,7 @@ export class ProfilesController {
 
   @Post()
   create(@Body() createProfilesDto: CreateProfilesDto) {
-    return createProfilesDto;
+    return this.profilesService.Create(createProfilesDto);
   }
 
   @Put(':id')

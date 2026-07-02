@@ -1,8 +1,8 @@
 #!/bin/bash
 
-curl -X POST http://localhost:3000/profiles \
+curl -X POST -i http://localhost:3000/profiles \
 -H "Content-Type: application/json" \
 -d '{
-    "name": "John Doe",
+    "name": "AUdi",
     "description": "A sample profile description"
 }'
