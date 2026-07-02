@@ -12,18 +12,22 @@ import {
 } from '@nestjs/common';
 import { CreateProfilesDto } from './dto/create-profiles.dto';
 import { UpdateProfilesDto } from './dto/update-profiles.dto';
+import { ProfilesService } from './profiles.service';
 
 @Controller('profiles')
 export class ProfilesController {
+  constructor(private readonly profilesService: ProfilesService) {}
+
   @Get()
-  findAll(@Query('location') location: string) {
-    return [{ location }];
+  findAll() {
+    return this.profilesService.findAll();
   }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return { id };
+    return this.profilesService.findOne(id);
   }
+
   /**ini method untuk post */
 
   @Post()
@@ -43,7 +47,7 @@ export class ProfilesController {
   }
 
   @Delete(':id')
-  @HttpCode(HttpStatus.OK)
+  @HttpCode(HttpStatus.NO_CONTENT)
   remove(@Param('id') id: string) {
     return { id };
   }
