@@ -3,6 +3,6 @@
 curl -X POST -i http://localhost:3000/profiles \
 -H "Content-Type: application/json" \
 -d '{
-    "name": "AUdi",
+    "name": "dudu",
     "description": "A sample profile description"
 }'

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-curl -X PUT -i http://localhost:3000/profiles/a4f87e7b-821e-41f4-99e3-8583e4a09cbc \
+curl -X PUT -i http://localhost:3000/profiles/835a1d97-6eb7-4e17-843a-c0161ad4249e \
 -H "Content-Type: application/json" \
 -d '{
-    "name": "John Doe Updated2",
+    "name": "J",
     "description": "An updated sample profile description"
 }'  
