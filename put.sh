@@ -1,4 +1,6 @@
-curl -X PUT -i http://localhost:3000/profiles/c00c4592-7928-4558-8f3a-e25e6c3b8fd9 \
+#!/bin/bash
+
+curl -X PUT -i http://localhost:3000/profiles/a4f87e7b-821e-41f4-99e3-8583e4a09cbc \
 -H "Content-Type: application/json" \
 -d '{
     "name": "John Doe Updated2",

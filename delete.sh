@@ -1,1 +1,3 @@
-curl -X DELETE -i http://localhost:3000/profiles/c00c4592-7928-4558-8f3a-e25e6c3b8fd9
+#!/bin/bash
+
+curl -X DELETE -i http://localhost:3000/profiles/8de1eed7-7529-4300-adbf-414c8643e68f
